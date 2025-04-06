@@ -10,6 +10,7 @@ function App() {
         <Autocomplete
           onSearch={fetchSuggestions}
           onSelect={(item) => console.log(item)}
+          showSuggestionsOnFocus
         />
       </div>
     </>
