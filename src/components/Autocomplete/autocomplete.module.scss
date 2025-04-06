@@ -1,5 +1,4 @@
 $primary-color: #ddd;
-$highlight-color: #ffcc00;
 $background-dark: #121212;
 $background-light: #222;
 $border-color: #444;
@@ -35,6 +34,7 @@ $border-color: #444;
   .suggestion {
     padding: 10px;
     cursor: pointer;
+    text-align: left;
     
     &:hover {
       background-color: $background-light;
@@ -42,8 +42,7 @@ $border-color: #444;
     }
   }
   
-  
-  .spinner {
+  .loading {
     padding: 10px;
     text-align: center;
   }
