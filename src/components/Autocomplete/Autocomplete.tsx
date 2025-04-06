@@ -54,7 +54,7 @@ const Autocomplete: React.FC<AutocompleteProps> = ({
       {isOpen && (
         <div className={styles.dropdown}>
           {isLoading ? (
-            <div className={styles.spinner}>Loading...</div>
+            <div className={styles.loading}>Loading...</div>
           ) : suggestions.length > 0 ? (
             suggestions.map((s: Suggestion) => (
               <div
