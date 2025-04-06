@@ -1,0 +1,55 @@
+$primary-color: #ddd;
+$highlight-color: #ffcc00;
+$background-dark: #121212;
+$background-light: #222;
+$border-color: #444;
+
+.autocompleteContainer {
+    position: relative;
+    width: 300px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .dropdown {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $background-dark;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  
+  .suggestion {
+    padding: 10px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $background-light;
+      color: $primary-color;
+    }
+  }
+  
+  
+  .spinner {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .noResults {
+    padding: 10px;
+    color: #999;
+    text-align: center;
+  }
